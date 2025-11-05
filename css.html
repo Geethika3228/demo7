@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>CSS: External vs Internal vs Inline</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .interstyle{
+            background-color: rgb(40, 224, 49);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS: External vs Internal vs Inline</h1>
+    <p >Open DevTools and inspect each box to see where the styles comes from</p>
+    <h2>External CSS</h2>
+    <div class="exterstyle">
+        <p>Styled be <b>external</b> CSS from styles.css.</p>
+    </div>
+    <h2>Internal CSS</h2>
+    <div class="interstyle">
+        <p>Styled by <b>internal</b> CSS in the <code> &lt;style&gt;</code> tag of this page.</p>
+    </div>
+    <h2>Inline CSS</h2>
+    <div style="background-color: rgb(227, 36, 36);">
+        <p>Styled by <b>inline</b> CSS via the style="" attribute on this element.</p>
+    </div>
+    <h2>Specificity Showdown (Who wins?)</h2>
+    The same element is targeted by external, internal, and inline rules:
+    <p="padding: 20px;"><UL><li>External sets it to <b>blue</b></li>
+    <li>Internal tries to make it <b>green</b></li>
+    <li>Inline forces it to <b>red</b></li></UL>
+    </p>
+</body>
+</html>
