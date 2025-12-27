@@ -1,0 +1,106 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    height: 70px;
+    width: 100%;
+    background: #1e3c72;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #ff4081;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(30,60,114,0.25);
+    background: #f0f4ff;
+}
+
+footer {
+    background: #1e3c72;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}
+/* ===============================
+🟢 RESOURCES SECTION
+================================ */
+.resources {
+    padding: 80px 20px;
+    text-align: center;
+    background: #ffffff;
+}
+
+.resources h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    color: #1e3c72;
+}
+
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e3c72;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #f0f4ff;
+    box-shadow: 0 15px 30px rgba(30,60,114,0.25);
+}

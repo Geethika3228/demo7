@@ -1,0 +1,54 @@
+
+/* ===============================
+🟢 HERO SECTION WITH OVERLAY
+================================ */
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url("https://images.unsplash.com/photo-1524995997946-a1c2e315a42f") center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 70px;
+    overflow: hidden;
+}
+
+/* 🟢 OVERLAY LAYER */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.55); /* dark overlay */
+    z-index: 1;
+}
+
+/* 🟢 TEXT ABOVE OVERLAY */
+.hero h1,
+.hero p,
+.hero .btn {
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 { font-size: 48px; }
+.hero p { font-size: 20px; margin: 15px 0; }
+
+.btn {
+    background: #ff4081;
+    color: white;
+    padding: 14px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.about {
+    padding: 80px;
+    text-align: center;
+    background: #f4f6f8;
+}

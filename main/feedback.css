@@ -1,0 +1,16 @@
+.feedback-section {
+    max-width: 500px;
+    margin: 100px auto;
+    background: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px var(--shadow);
+}
+
+
+.feedback-section h1 { text-align: center; color: #1e3c72; margin-bottom: 25px; }
+.feedback-form input, .feedback-form textarea, .feedback-form select {
+    width: 100%; padding: 12px; margin: 10px 0; border-radius: 6px; border: 1px solid #ccc;
+}
+.feedback-form button { width: 100%; background: #1e3c72; color: white; padding: 12px; border: none; border-radius: 6px; cursor: pointer; }
+.feedback-form label { font-weight: bold; margin-top: 10px; display: block; }
